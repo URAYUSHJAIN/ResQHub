@@ -36,8 +36,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload pages from the new source directory
-          path: 'ResQHub/src/pages'
+          # Upload the repository folder so Pages gets pages, assets and docs
+          path: 'ResQHub'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
